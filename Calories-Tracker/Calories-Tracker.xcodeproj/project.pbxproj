@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BDB869EC292C36AC00051C82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB869EB292C36AC00051C82 /* AppDelegate.swift */; };
-		BDB869EE292C36AC00051C82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB869ED292C36AC00051C82 /* SceneDelegate.swift */; };
-		BDB869F0292C36AC00051C82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB869EF292C36AC00051C82 /* ViewController.swift */; };
-		BDB869F3292C36AC00051C82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB869F1292C36AC00051C82 /* Main.storyboard */; };
-		BDB869F5292C36AD00051C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB869F4292C36AD00051C82 /* Assets.xcassets */; };
-		BDB869F8292C36AD00051C82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB869F6292C36AD00051C82 /* LaunchScreen.storyboard */; };
-		BDB86A04292C445700051C82 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB86A03292C445700051C82 /* Food.swift */; };
+		BDB86A15292D8AE100051C82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB86A14292D8AE100051C82 /* AppDelegate.swift */; };
+		BDB86A17292D8AE100051C82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB86A16292D8AE100051C82 /* SceneDelegate.swift */; };
+		BDB86A19292D8AE100051C82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB86A18292D8AE100051C82 /* ViewController.swift */; };
+		BDB86A1C292D8AE100051C82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB86A1A292D8AE100051C82 /* Main.storyboard */; };
+		BDB86A1F292D8AE100051C82 /* Calories_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDB86A1D292D8AE100051C82 /* Calories_Tracker.xcdatamodeld */; };
+		BDB86A21292D8AE300051C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB86A20292D8AE300051C82 /* Assets.xcassets */; };
+		BDB86A24292D8AE300051C82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB86A22292D8AE300051C82 /* LaunchScreen.storyboard */; };
+		BDB86A2D292D8F0400051C82 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB86A2C292D8F0400051C82 /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BDB869E8292C36AC00051C82 /* Calorie-Tracker-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calorie-Tracker-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDB869EB292C36AC00051C82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BDB869ED292C36AC00051C82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BDB869EF292C36AC00051C82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BDB869F2292C36AC00051C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BDB869F4292C36AD00051C82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BDB869F7292C36AD00051C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BDB869F9292C36AD00051C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDB86A03292C445700051C82 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		BDB86A11292D8AE100051C82 /* Calories-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calories-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB86A14292D8AE100051C82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDB86A16292D8AE100051C82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BDB86A18292D8AE100051C82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDB86A1B292D8AE100051C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDB86A1E292D8AE100051C82 /* Calories_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Calories_Tracker.xcdatamodel; sourceTree = "<group>"; };
+		BDB86A20292D8AE300051C82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDB86A23292D8AE300051C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDB86A25292D8AE300051C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB86A2C292D8F0400051C82 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BDB869E5292C36AC00051C82 /* Frameworks */ = {
+		BDB86A0E292D8AE100051C82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,41 +41,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BDB869DF292C36AC00051C82 = {
+		BDB86A08292D8AE100051C82 = {
 			isa = PBXGroup;
 			children = (
-				BDB869EA292C36AC00051C82 /* Calorie-Tracker-App */,
-				BDB869E9292C36AC00051C82 /* Products */,
+				BDB86A13292D8AE100051C82 /* Calories-Tracker */,
+				BDB86A12292D8AE100051C82 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BDB869E9292C36AC00051C82 /* Products */ = {
+		BDB86A12292D8AE100051C82 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BDB869E8292C36AC00051C82 /* Calorie-Tracker-App.app */,
+				BDB86A11292D8AE100051C82 /* Calories-Tracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BDB869EA292C36AC00051C82 /* Calorie-Tracker-App */ = {
+		BDB86A13292D8AE100051C82 /* Calories-Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				BDB869FF292C43CA00051C82 /* Models */,
-				BDB869EB292C36AC00051C82 /* AppDelegate.swift */,
-				BDB869ED292C36AC00051C82 /* SceneDelegate.swift */,
-				BDB869EF292C36AC00051C82 /* ViewController.swift */,
-				BDB869F1292C36AC00051C82 /* Main.storyboard */,
-				BDB869F4292C36AD00051C82 /* Assets.xcassets */,
-				BDB869F6292C36AD00051C82 /* LaunchScreen.storyboard */,
-				BDB869F9292C36AD00051C82 /* Info.plist */,
+				BDB86A2B292D8AF300051C82 /* Models */,
+				BDB86A14292D8AE100051C82 /* AppDelegate.swift */,
+				BDB86A16292D8AE100051C82 /* SceneDelegate.swift */,
+				BDB86A18292D8AE100051C82 /* ViewController.swift */,
+				BDB86A1A292D8AE100051C82 /* Main.storyboard */,
+				BDB86A20292D8AE300051C82 /* Assets.xcassets */,
+				BDB86A22292D8AE300051C82 /* LaunchScreen.storyboard */,
+				BDB86A25292D8AE300051C82 /* Info.plist */,
+				BDB86A1D292D8AE100051C82 /* Calories_Tracker.xcdatamodeld */,
 			);
-			path = "Calorie-Tracker-App";
+			path = "Calories-Tracker";
 			sourceTree = "<group>";
 		};
-		BDB869FF292C43CA00051C82 /* Models */ = {
+		BDB86A2B292D8AF300051C82 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BDB86A03292C445700051C82 /* Food.swift */,
+				BDB86A2C292D8F0400051C82 /* Food.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -81,39 +84,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BDB869E7292C36AC00051C82 /* Calorie-Tracker-App */ = {
+		BDB86A10292D8AE100051C82 /* Calories-Tracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDB869FC292C36AD00051C82 /* Build configuration list for PBXNativeTarget "Calorie-Tracker-App" */;
+			buildConfigurationList = BDB86A28292D8AE300051C82 /* Build configuration list for PBXNativeTarget "Calories-Tracker" */;
 			buildPhases = (
-				BDB869E4292C36AC00051C82 /* Sources */,
-				BDB869E5292C36AC00051C82 /* Frameworks */,
-				BDB869E6292C36AC00051C82 /* Resources */,
+				BDB86A0D292D8AE100051C82 /* Sources */,
+				BDB86A0E292D8AE100051C82 /* Frameworks */,
+				BDB86A0F292D8AE100051C82 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Calorie-Tracker-App";
-			productName = "Calorie-Tracker-App";
-			productReference = BDB869E8292C36AC00051C82 /* Calorie-Tracker-App.app */;
+			name = "Calories-Tracker";
+			productName = "Calories-Tracker";
+			productReference = BDB86A11292D8AE100051C82 /* Calories-Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BDB869E0292C36AC00051C82 /* Project object */ = {
+		BDB86A09292D8AE100051C82 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					BDB869E7292C36AC00051C82 = {
+					BDB86A10292D8AE100051C82 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
-			buildConfigurationList = BDB869E3292C36AC00051C82 /* Build configuration list for PBXProject "Calorie-Tracker-App" */;
+			buildConfigurationList = BDB86A0C292D8AE100051C82 /* Build configuration list for PBXProject "Calories-Tracker" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,56 +124,57 @@
 				en,
 				Base,
 			);
-			mainGroup = BDB869DF292C36AC00051C82;
-			productRefGroup = BDB869E9292C36AC00051C82 /* Products */;
+			mainGroup = BDB86A08292D8AE100051C82;
+			productRefGroup = BDB86A12292D8AE100051C82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BDB869E7292C36AC00051C82 /* Calorie-Tracker-App */,
+				BDB86A10292D8AE100051C82 /* Calories-Tracker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BDB869E6292C36AC00051C82 /* Resources */ = {
+		BDB86A0F292D8AE100051C82 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDB869F8292C36AD00051C82 /* LaunchScreen.storyboard in Resources */,
-				BDB869F5292C36AD00051C82 /* Assets.xcassets in Resources */,
-				BDB869F3292C36AC00051C82 /* Main.storyboard in Resources */,
+				BDB86A24292D8AE300051C82 /* LaunchScreen.storyboard in Resources */,
+				BDB86A21292D8AE300051C82 /* Assets.xcassets in Resources */,
+				BDB86A1C292D8AE100051C82 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BDB869E4292C36AC00051C82 /* Sources */ = {
+		BDB86A0D292D8AE100051C82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDB869F0292C36AC00051C82 /* ViewController.swift in Sources */,
-				BDB86A04292C445700051C82 /* Food.swift in Sources */,
-				BDB869EC292C36AC00051C82 /* AppDelegate.swift in Sources */,
-				BDB869EE292C36AC00051C82 /* SceneDelegate.swift in Sources */,
+				BDB86A19292D8AE100051C82 /* ViewController.swift in Sources */,
+				BDB86A15292D8AE100051C82 /* AppDelegate.swift in Sources */,
+				BDB86A2D292D8F0400051C82 /* Food.swift in Sources */,
+				BDB86A1F292D8AE100051C82 /* Calories_Tracker.xcdatamodeld in Sources */,
+				BDB86A17292D8AE100051C82 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BDB869F1292C36AC00051C82 /* Main.storyboard */ = {
+		BDB86A1A292D8AE100051C82 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BDB869F2292C36AC00051C82 /* Base */,
+				BDB86A1B292D8AE100051C82 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		BDB869F6292C36AD00051C82 /* LaunchScreen.storyboard */ = {
+		BDB86A22292D8AE300051C82 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BDB869F7292C36AD00051C82 /* Base */,
+				BDB86A23292D8AE300051C82 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +182,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BDB869FA292C36AD00051C82 /* Debug */ = {
+		BDB86A26292D8AE300051C82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		BDB869FB292C36AD00051C82 /* Release */ = {
+		BDB86A27292D8AE300051C82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,7 +296,7 @@
 			};
 			name = Release;
 		};
-		BDB869FD292C36AD00051C82 /* Debug */ = {
+		BDB86A29292D8AE300051C82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -301,7 +305,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HPX794PR75;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Calorie-Tracker-App/Info.plist";
+				INFOPLIST_FILE = "Calories-Tracker/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -312,7 +316,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "CT.Calorie-Tracker-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "CT.Calories-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,7 +324,7 @@
 			};
 			name = Debug;
 		};
-		BDB869FE292C36AD00051C82 /* Release */ = {
+		BDB86A2A292D8AE300051C82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -329,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HPX794PR75;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Calorie-Tracker-App/Info.plist";
+				INFOPLIST_FILE = "Calories-Tracker/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -340,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "CT.Calorie-Tracker-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "CT.Calories-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -351,25 +355,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BDB869E3292C36AC00051C82 /* Build configuration list for PBXProject "Calorie-Tracker-App" */ = {
+		BDB86A0C292D8AE100051C82 /* Build configuration list for PBXProject "Calories-Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BDB869FA292C36AD00051C82 /* Debug */,
-				BDB869FB292C36AD00051C82 /* Release */,
+				BDB86A26292D8AE300051C82 /* Debug */,
+				BDB86A27292D8AE300051C82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BDB869FC292C36AD00051C82 /* Build configuration list for PBXNativeTarget "Calorie-Tracker-App" */ = {
+		BDB86A28292D8AE300051C82 /* Build configuration list for PBXNativeTarget "Calories-Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BDB869FD292C36AD00051C82 /* Debug */,
-				BDB869FE292C36AD00051C82 /* Release */,
+				BDB86A29292D8AE300051C82 /* Debug */,
+				BDB86A2A292D8AE300051C82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BDB86A1D292D8AE100051C82 /* Calories_Tracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BDB86A1E292D8AE100051C82 /* Calories_Tracker.xcdatamodel */,
+			);
+			currentVersion = BDB86A1E292D8AE100051C82 /* Calories_Tracker.xcdatamodel */;
+			path = Calories_Tracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = BDB869E0292C36AC00051C82 /* Project object */;
+	rootObject = BDB86A09292D8AE100051C82 /* Project object */;
 }

@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Calorie-Tracker-App
+//  Calories-Tracker
 //
-//  Created by Denislav Todorov on 22.11.22.
+//  Created by Denislav Todorov on 23.11.22.
 //
 
 import UIKit
