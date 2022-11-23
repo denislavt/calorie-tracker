@@ -43,12 +43,14 @@ class FoodsViewController: UIViewController {
             textField.placeholder = "Protein"
             textField.keyboardType = .numberPad
         }
+        
+        
         let action = UIAlertAction(title: "Add", style: .default) { (_) in
             let name = alert.textFields?.first!.text
-            let caloriesPer100Grams = alert.textFields?.index(after: 0)
-            let fat = alert.textFields?.index(after: 1)
-            let carbohydrate = alert.textFields?.index(after: 2)
-            let protein = alert.textFields?.last!
+            let caloriesPer100Grams = alert.textFields?.first!.text
+            let fat = alert.textFields?.first!.text
+            let carbohydrate = alert.textFields?.first!.text
+            let protein = alert.textFields?.last!.text
             print(name)
             print(caloriesPer100Grams)
             print(fat)
