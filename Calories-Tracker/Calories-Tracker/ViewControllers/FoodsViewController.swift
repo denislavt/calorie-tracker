@@ -46,16 +46,16 @@ class FoodsViewController: UIViewController {
         
         
         let action = UIAlertAction(title: "Add", style: .default) { (_) in
-            let name = alert.textFields?.first!.text
-            let caloriesPer100Grams = alert.textFields?.first!.text
-            let fat = alert.textFields?.first!.text
-            let carbohydrate = alert.textFields?.first!.text
-            let protein = alert.textFields?.last!.text
-            print(name)
-            print(caloriesPer100Grams)
-            print(fat)
-            print(carbohydrate)
-            print(protein)
+            let name = alert.textFields?[0].text
+            let caloriesPer100Grams = alert.textFields?[1].text
+            let fat = alert.textFields?[2].text
+            let carbohydrate = alert.textFields?[3].text
+            let protein = alert.textFields?[4].text
+            print(name!)
+            print(caloriesPer100Grams!)
+            print(fat!)
+            print(carbohydrate!)
+            print(protein!)
         }
         
         alert.addAction(action)

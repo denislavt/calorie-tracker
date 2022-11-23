@@ -9,10 +9,10 @@ import UIKit
 
 class Food {
     var name: String
-    var caloriesPer100Grams: Int
-    var macroFat: Int
-    var macroCarb: Int
-    var macroProtein: Int
+    var caloriesPer100Grams: Double
+    var macroFat: Double
+    var macroCarb: Double
+    var macroProtein: Double
     
 //    convenience init(withName name: String,
 //         caloriesPer100Grams: Int,
@@ -26,10 +26,10 @@ class Food {
 //            macroProtein: macroProtein)
 //    }
     init(withName name: String,
-         caloriesPer100Grams: Int,
-         macroFat: Int,
-         macroCarb: Int,
-         andProtein macroProtein: Int) {
+         caloriesPer100Grams: Double,
+         macroFat: Double,
+         macroCarb: Double,
+         andProtein macroProtein: Double) {
         self.name = name
         self.caloriesPer100Grams = caloriesPer100Grams
         self.macroFat = macroFat
