@@ -47,15 +47,24 @@ class FoodsViewController: UIViewController {
         
         let action = UIAlertAction(title: "Add", style: .default) { (_) in
             let name = alert.textFields?[0].text
-            let caloriesPer100Grams = alert.textFields?[1].text
-            let fat = alert.textFields?[2].text
-            let carbohydrate = alert.textFields?[3].text
-            let protein = alert.textFields?[4].text
-            print(name!)
-            print(caloriesPer100Grams!)
-            print(fat!)
-            print(carbohydrate!)
-            print(protein!)
+            let calories100g = Int((alert.textFields?[1].text)!)
+            let fat = Int((alert.textFields?[2].text)!)
+            let carbohydrate = Int((alert.textFields?[3].text)!)
+            let protein = Int((alert.textFields?[4].text)!)
+            
+            let food = Food(context: PersistenceService.context)
+            print(NSStringFromClass(food.classForCoder))
+            food.name?.append(name!)
+            food.calories100g = calories100g ?? 0
+            food.macroFat = fat ?? 0
+            food.macroCarb = carbohydrate ?? 0
+            food.macroProtein = protein ?? 0
+            
+            PersistenceService.saveContext()
+            
+            self.foods.append(food)
+            self.tableView.reloadData()
+            
         }
         
         alert.addAction(action)
@@ -79,8 +88,11 @@ extension FoodsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
-        cell.textLabel?.text = ""
-        cell.detailTextLabel?.text = ""
+        cell.textLabel?.text = foods[indexPath.row].name
+        cell.detailTextLabel?.text = String(foods[indexPath.row].calories100g)
+        cell.detailTextLabel?.text = String(foods[indexPath.row].macroFat)
+        cell.detailTextLabel?.text = String(foods[indexPath.row].macroCarb)
+        cell.detailTextLabel?.text = String(foods[indexPath.row].macroProtein)
         return cell
     }
 }
