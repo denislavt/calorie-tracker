@@ -47,15 +47,15 @@ class FoodsViewController: UIViewController {
         
         let action = UIAlertAction(title: "Add", style: .default) { (_) in
             let name = alert.textFields?[0].text
-            let calories100g = Int((alert.textFields?[1].text)!) ?? 0
-            let fat = Int((alert.textFields?[2].text)!) ?? 0
-            let carbohydrate = Int((alert.textFields?[3].text)!) ?? 0
-            let protein = Int((alert.textFields?[4].text)!) ?? 0
+            let calories100g = Int32((alert.textFields?[1].text)!) ?? 0
+            let fat = Int32((alert.textFields?[2].text)!) ?? 0
+            let carbohydrate = Int32((alert.textFields?[3].text)!) ?? 0
+            let protein = Int32((alert.textFields?[4].text)!) ?? 0
             
             let food = Food(context: PersistenceService.context)
             
             food.name = name!
-            food.calories100g = calories100g
+            food.coloriesPer100Grams = calories100g
             food.macroFat = fat
             food.macroCarb = carbohydrate
             food.macroProtein = protein
@@ -89,7 +89,7 @@ extension FoodsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
         cell.textLabel?.text = foods[indexPath.row].name
-        cell.detailTextLabel?.text = String(foods[indexPath.row].calories100g)
+        cell.detailTextLabel?.text = String(foods[indexPath.row].coloriesPer100Grams)
         cell.detailTextLabel?.text = String(foods[indexPath.row].macroFat)
         cell.detailTextLabel?.text = String(foods[indexPath.row].macroCarb)
         cell.detailTextLabel?.text = String(foods[indexPath.row].macroProtein)

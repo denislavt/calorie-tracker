@@ -16,11 +16,11 @@ extension Food {
         return NSFetchRequest<Food>(entityName: "Food")
     }
 
+    @NSManaged public var coloriesPer100Grams: Int32
+    @NSManaged public var macroCarb: Int32
+    @NSManaged public var macroFat: Int32
+    @NSManaged public var macroProtein: Int32
     @NSManaged public var name: String?
-    @NSManaged @objc(calories100g) public var calories100g: Int
-    @NSManaged public var macroFat: Int
-    @NSManaged public var macroCarb: Int
-    @NSManaged public var macroProtein: Int
 
 }
 
