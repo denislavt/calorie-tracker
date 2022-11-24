@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class FoodsViewController: UIViewController {
     
@@ -15,7 +16,17 @@ class FoodsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let fetchRequest: NSFetchRequest<Food> = Food.fetchRequest()
+        
+        var weakSelf = self
+        
+        do{
+          let foods = try PersistenceService.context.fetch(fetchRequest)
+          weakSelf.foods = foods
+            weakSelf.tableView.reloadData()
+        } catch {
+            
+        }
     }
     
     
@@ -28,7 +39,7 @@ class FoodsViewController: UIViewController {
             textField.placeholder = "Food Name"
         }
         alert.addTextField{ (textField) in
-            textField.placeholder = "Calories per 100g"
+            textField.placeholder = "Calories Per 100g"
             textField.keyboardType = .numberPad
         }
         alert.addTextField{ (textField) in
@@ -88,11 +99,11 @@ extension FoodsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
-        cell.textLabel?.text = foods[indexPath.row].name
-        cell.detailTextLabel?.text = String(foods[indexPath.row].coloriesPer100Grams)
-        cell.detailTextLabel?.text = String(foods[indexPath.row].macroFat)
-        cell.detailTextLabel?.text = String(foods[indexPath.row].macroCarb)
-        cell.detailTextLabel?.text = String(foods[indexPath.row].macroProtein)
+        cell.textLabel?.text = "\(foods[indexPath.row].name!)   -   \(String(foods[indexPath.row].coloriesPer100Grams))calories"
+        //cell.detailTextLabel?.text = String(foods[indexPath.row].coloriesPer100Grams)
+        cell.detailTextLabel?.text = "C: \(String(foods[indexPath.row].macroCarb))  P: \(String(foods[indexPath.row].macroProtein))  F: \(String(foods[indexPath.row].macroFat))"
+//        cell.detailTextLabel?.text = String(foods[indexPath.row].macroCarb)
+//        cell.detailTextLabel?.text = String(foods[indexPath.row].macroProtein)
         return cell
     }
 }
