@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BD43DCFA292FD37900C74E95 /* Food+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43DCF8292FD37900C74E95 /* Food+CoreDataClass.swift */; };
 		BD43DCFB292FD37900C74E95 /* Food+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43DCF9292FD37900C74E95 /* Food+CoreDataProperties.swift */; };
+		BD4ABDD829301FCD007A0539 /* CalendarFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4ABDD729301FCD007A0539 /* CalendarFoodViewController.swift */; };
 		BD9B6E7A292D984900722894 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B6E79292D984900722894 /* PersistenceService.swift */; };
 		BDB86A15292D8AE100051C82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB86A14292D8AE100051C82 /* AppDelegate.swift */; };
 		BDB86A17292D8AE100051C82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB86A16292D8AE100051C82 /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		BD43DCF8292FD37900C74E95 /* Food+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BD43DCF9292FD37900C74E95 /* Food+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BD4ABDD729301FCD007A0539 /* CalendarFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarFoodViewController.swift; sourceTree = "<group>"; };
 		BD9B6E79292D984900722894 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		BDB86A11292D8AE100051C82 /* Calories-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calories-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB86A14292D8AE100051C82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				BDB86A18292D8AE100051C82 /* FoodsViewController.swift */,
+				BD4ABDD729301FCD007A0539 /* CalendarFoodViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4ABDD829301FCD007A0539 /* CalendarFoodViewController.swift in Sources */,
 				BDB86A19292D8AE100051C82 /* FoodsViewController.swift in Sources */,
 				BD9B6E7A292D984900722894 /* PersistenceService.swift in Sources */,
 				BD43DCFB292FD37900C74E95 /* Food+CoreDataProperties.swift in Sources */,

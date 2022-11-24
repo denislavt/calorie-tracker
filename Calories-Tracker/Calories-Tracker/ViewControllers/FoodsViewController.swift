@@ -18,7 +18,7 @@ class FoodsViewController: UIViewController {
         super.viewDidLoad()
         let fetchRequest: NSFetchRequest<Food> = Food.fetchRequest()
         
-        var weakSelf = self
+        let weakSelf = self
         
         do{
           let foods = try PersistenceService.context.fetch(fetchRequest)
@@ -82,9 +82,7 @@ class FoodsViewController: UIViewController {
         present(alert, animated: true)
     }
     
-    @IBAction func cancelTapped() {
-        
-    }
+    
 
 }
 
