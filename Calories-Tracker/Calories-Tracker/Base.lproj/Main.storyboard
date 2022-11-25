@@ -30,26 +30,56 @@
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ac8-Zr-lqn">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <rect key="frame" x="0.0" y="144" width="393" height="708"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="708" id="jzB-xe-vgp"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="fOE-az-9HK" id="bjc-ym-W60"/>
                                 </connections>
                             </tableView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOw-Sd-SP1">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
+                                <color key="backgroundColor" red="0.4941176176" green="0.40392160420000001" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <segue destination="DcU-9m-Ddm" kind="embed" id="2TX-nb-gYW"/>
+                                </connections>
+                            </containerView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="8ws-mQ-ei8">
+                                <rect key="frame" x="0.0" y="103" width="393" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fOE-az-9HK" id="L7g-LK-ytT"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4cu-jB-Fpv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Ac8-Zr-lqn" firstAttribute="top" secondItem="Kbj-c4-QX3" secondAttribute="bottom" constant="41" id="3HF-uV-O0S"/>
                             <constraint firstItem="Kbj-c4-QX3" firstAttribute="trailing" secondItem="4cu-jB-Fpv" secondAttribute="trailing" id="6Tx-lG-nHr"/>
+                            <constraint firstItem="8ws-mQ-ei8" firstAttribute="trailing" secondItem="4cu-jB-Fpv" secondAttribute="trailing" id="8XK-SC-ctR"/>
+                            <constraint firstItem="fOw-Sd-SP1" firstAttribute="top" secondItem="2vc-jG-QBH" secondAttribute="top" id="AxJ-BR-Qr9"/>
+                            <constraint firstItem="Ac8-Zr-lqn" firstAttribute="trailing" secondItem="8ws-mQ-ei8" secondAttribute="trailing" id="Aze-Th-mBO"/>
                             <constraint firstItem="Kbj-c4-QX3" firstAttribute="leading" secondItem="4cu-jB-Fpv" secondAttribute="leading" id="CNW-TX-Lj8"/>
-                            <constraint firstItem="Ac8-Zr-lqn" firstAttribute="trailing" secondItem="4cu-jB-Fpv" secondAttribute="trailing" id="DW9-eC-BCG"/>
-                            <constraint firstItem="Ac8-Zr-lqn" firstAttribute="leading" secondItem="4cu-jB-Fpv" secondAttribute="leading" id="HUV-fT-HaJ"/>
+                            <constraint firstItem="Ac8-Zr-lqn" firstAttribute="top" secondItem="Kbj-c4-QX3" secondAttribute="bottom" constant="41" id="Cb1-mV-g6W"/>
+                            <constraint firstItem="fOw-Sd-SP1" firstAttribute="top" secondItem="2vc-jG-QBH" secondAttribute="top" id="KaT-0F-Hz5"/>
+                            <constraint firstItem="fOw-Sd-SP1" firstAttribute="leading" secondItem="2vc-jG-QBH" secondAttribute="leading" id="L6g-rS-K7b"/>
                             <constraint firstItem="Kbj-c4-QX3" firstAttribute="top" secondItem="4cu-jB-Fpv" secondAttribute="top" id="LXi-uW-xFf"/>
-                            <constraint firstItem="Ac8-Zr-lqn" firstAttribute="top" secondItem="Kbj-c4-QX3" secondAttribute="bottom" id="LlV-na-6Tj"/>
+                            <constraint firstAttribute="trailing" secondItem="fOw-Sd-SP1" secondAttribute="trailing" id="Mcv-rA-Wnq"/>
                             <constraint firstItem="Kbj-c4-QX3" firstAttribute="trailing" secondItem="4cu-jB-Fpv" secondAttribute="trailing" id="PIa-mJ-5ad"/>
-                            <constraint firstAttribute="bottom" secondItem="Ac8-Zr-lqn" secondAttribute="bottom" id="R9W-yC-75H"/>
+                            <constraint firstItem="8ws-mQ-ei8" firstAttribute="leading" secondItem="4cu-jB-Fpv" secondAttribute="leading" id="SoT-aL-QPE"/>
+                            <constraint firstAttribute="bottom" secondItem="Ac8-Zr-lqn" secondAttribute="bottom" id="T6q-XV-KrR"/>
                             <constraint firstItem="Kbj-c4-QX3" firstAttribute="top" secondItem="4cu-jB-Fpv" secondAttribute="top" id="Vcz-VS-Sn3"/>
+                            <constraint firstItem="4cu-jB-Fpv" firstAttribute="bottom" secondItem="8ws-mQ-ei8" secondAttribute="bottom" constant="622" id="Vp2-GS-5LO"/>
+                            <constraint firstItem="Ac8-Zr-lqn" firstAttribute="leading" secondItem="4cu-jB-Fpv" secondAttribute="leading" id="hEs-A7-yIf"/>
+                            <constraint firstItem="Ac8-Zr-lqn" firstAttribute="trailing" secondItem="4cu-jB-Fpv" secondAttribute="trailing" id="iWK-24-AWL"/>
                             <constraint firstItem="Kbj-c4-QX3" firstAttribute="leading" secondItem="4cu-jB-Fpv" secondAttribute="leading" id="ot5-l1-QcN"/>
+                            <constraint firstItem="Ac8-Zr-lqn" firstAttribute="leading" secondItem="8ws-mQ-ei8" secondAttribute="leading" id="tIh-c2-rcl"/>
+                            <constraint firstItem="8ws-mQ-ei8" firstAttribute="top" secondItem="Kbj-c4-QX3" secondAttribute="bottom" id="tLl-mQ-tSx"/>
+                            <constraint firstItem="Kbj-c4-QX3" firstAttribute="top" secondItem="fOw-Sd-SP1" secondAttribute="bottom" symbolic="YES" id="wks-DJ-2oO"/>
+                            <constraint firstAttribute="bottom" secondItem="Ac8-Zr-lqn" secondAttribute="bottom" id="yF9-ns-2oO"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="CID-yQ-xi3">
@@ -69,12 +99,13 @@
                         </imageReference>
                     </tabBarItem>
                     <connections>
+                        <outlet property="searchBar" destination="8ws-mQ-ei8" id="rWK-8m-8eY"/>
                         <outlet property="tableView" destination="Ac8-Zr-lqn" id="uOW-wf-ZZ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9VE-vD-lS5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3161" y="512"/>
+            <point key="canvasLocation" x="-3161.0687022900761" y="511.97183098591552"/>
         </scene>
         <!--Calendar Food View Controller-->
         <scene sceneID="PIw-Ne-VO9">
@@ -83,6 +114,13 @@
                     <view key="view" contentMode="scaleToFill" id="hXn-qh-1Q9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J6I-dV-EsL">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.4941176176" green="0.40392160420000001" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pMo-qC-H3s"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -116,7 +154,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j0h-Vc-WqU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.32985787269610478" green="0.0" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.4941176176" green="0.40392160420000001" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="Iv4-H2-GAh" kind="relationship" relationship="viewControllers" id="cVL-vs-hoD"/>
@@ -126,6 +164,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNb-js-uat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4223" y="-238"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c0E-Sy-YLj">
+            <objects>
+                <viewController id="DcU-9m-Ddm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z4Y-3T-viZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.4941176176" green="0.40392160420000001" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92x-SS-wMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4066" y="154"/>
         </scene>
     </scenes>
     <resources>

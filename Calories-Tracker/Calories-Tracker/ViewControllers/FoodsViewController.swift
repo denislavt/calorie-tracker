@@ -10,7 +10,9 @@ import CoreData
 
 class FoodsViewController: UIViewController {
     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    
 
     var foods = [Food]()
     
