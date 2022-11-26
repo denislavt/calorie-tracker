@@ -8,13 +8,14 @@
 import UIKit
 import CoreData
 
-class FoodsViewController: UIViewController {
+class FoodsViewController: UIViewController, UISearchBarDelegate, UISearchDisplayDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
 
     var foods = [Food]()
+    var searchedFoods = [Food]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,9 @@ class FoodsViewController: UIViewController {
         } catch {
             
         }
+        
+        searchBar.delegate=self
+        
     }
     
     
@@ -84,6 +88,23 @@ class FoodsViewController: UIViewController {
         present(alert, animated: true)
     }
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if !searchText.isEmpty {
+            var predicate: NSPredicate = NSPredicate()
+            predicate = NSPredicate(format: "name contains[c] '\(searchText)'")
+            //guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+            let managedObjectContext = PersistenceService.context
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName:"Food")
+            fetchRequest.predicate = predicate
+            do {
+                foods = try managedObjectContext.fetch(fetchRequest) as! [Food]
+                
+            } catch let error as NSError {
+                print("Could not fetch. \(error)")
+            }
+        }
+        tableView.reloadData()
+    }
     
 
 }
