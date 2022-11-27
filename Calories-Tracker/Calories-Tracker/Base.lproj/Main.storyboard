@@ -42,9 +42,6 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOw-Sd-SP1">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
                                 <color key="backgroundColor" red="0.4941176176" green="0.40392160420000001" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <segue destination="DcU-9m-Ddm" kind="embed" id="2TX-nb-gYW"/>
-                                </connections>
                             </containerView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="8ws-mQ-ei8">
                                 <rect key="frame" x="0.0" y="103" width="393" height="44"/>
@@ -71,13 +68,16 @@
                             <constraint firstItem="Kbj-c4-QX3" firstAttribute="trailing" secondItem="4cu-jB-Fpv" secondAttribute="trailing" id="PIa-mJ-5ad"/>
                             <constraint firstItem="8ws-mQ-ei8" firstAttribute="leading" secondItem="4cu-jB-Fpv" secondAttribute="leading" id="SoT-aL-QPE"/>
                             <constraint firstAttribute="bottom" secondItem="Ac8-Zr-lqn" secondAttribute="bottom" id="T6q-XV-KrR"/>
+                            <constraint firstItem="fOw-Sd-SP1" firstAttribute="top" secondItem="2vc-jG-QBH" secondAttribute="top" id="UOt-Av-AGG"/>
                             <constraint firstItem="Kbj-c4-QX3" firstAttribute="top" secondItem="4cu-jB-Fpv" secondAttribute="top" id="Vcz-VS-Sn3"/>
                             <constraint firstItem="4cu-jB-Fpv" firstAttribute="bottom" secondItem="8ws-mQ-ei8" secondAttribute="bottom" constant="622" id="Vp2-GS-5LO"/>
+                            <constraint firstAttribute="trailing" secondItem="fOw-Sd-SP1" secondAttribute="trailing" id="ZUh-En-NSB"/>
                             <constraint firstItem="Ac8-Zr-lqn" firstAttribute="leading" secondItem="4cu-jB-Fpv" secondAttribute="leading" id="hEs-A7-yIf"/>
                             <constraint firstItem="Ac8-Zr-lqn" firstAttribute="trailing" secondItem="4cu-jB-Fpv" secondAttribute="trailing" id="iWK-24-AWL"/>
                             <constraint firstItem="Kbj-c4-QX3" firstAttribute="leading" secondItem="4cu-jB-Fpv" secondAttribute="leading" id="ot5-l1-QcN"/>
                             <constraint firstItem="Ac8-Zr-lqn" firstAttribute="leading" secondItem="8ws-mQ-ei8" secondAttribute="leading" id="tIh-c2-rcl"/>
                             <constraint firstItem="8ws-mQ-ei8" firstAttribute="top" secondItem="Kbj-c4-QX3" secondAttribute="bottom" id="tLl-mQ-tSx"/>
+                            <constraint firstItem="fOw-Sd-SP1" firstAttribute="leading" secondItem="2vc-jG-QBH" secondAttribute="leading" id="uw9-Jj-XHj"/>
                             <constraint firstItem="Kbj-c4-QX3" firstAttribute="top" secondItem="fOw-Sd-SP1" secondAttribute="bottom" symbolic="YES" id="wks-DJ-2oO"/>
                             <constraint firstAttribute="bottom" secondItem="Ac8-Zr-lqn" secondAttribute="bottom" id="yF9-ns-2oO"/>
                         </constraints>
@@ -111,17 +111,18 @@
         <scene sceneID="PIw-Ne-VO9">
             <objects>
                 <viewController id="Iv4-H2-GAh" customClass="CalendarFoodViewController" customModule="Calories_Tracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hXn-qh-1Q9">
+                    <view key="view" contentMode="scaleToFill" id="mu3-w9-AAM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J6I-dV-EsL">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2dz-Km-22F">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.4941176176" green="0.40392160420000001" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </containerView>
+                                <color key="tintColor" red="0.4941176176" green="0.40392160420000001" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="pMo-qC-H3s"/>
+                        <viewLayoutGuide key="safeArea" id="X4J-m8-MrA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="ggS-ra-Zfh">
@@ -145,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5nK-Qf-gA9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3161" y="-238"/>
+            <point key="canvasLocation" x="-3161.0687022900761" y="-238.02816901408451"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="WVT-ej-qtC">
@@ -164,20 +165,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNb-js-uat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4223" y="-238"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="c0E-Sy-YLj">
-            <objects>
-                <viewController id="DcU-9m-Ddm" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="z4Y-3T-viZ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.4941176176" green="0.40392160420000001" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="92x-SS-wMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-4066" y="154"/>
         </scene>
     </scenes>
     <resources>
