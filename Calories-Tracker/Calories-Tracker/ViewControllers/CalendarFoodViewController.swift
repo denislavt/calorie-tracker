@@ -8,6 +8,7 @@
 import UIKit
 
 class CalendarFoodViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +17,8 @@ class CalendarFoodViewController: UIViewController {
     }
     
 
+    
+    
     /*
     // MARK: - Navigation
 
@@ -26,4 +29,22 @@ class CalendarFoodViewController: UIViewController {
     }
     */
 
+}
+
+
+extension CalendarFoodViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+        
+        
+        return cell
+    }
 }
