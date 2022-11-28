@@ -13,9 +13,13 @@ class FoodsViewController: UIViewController, UISearchBarDelegate, UISearchDispla
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
+    var calendarFoodViewController: CalendarFoodViewController?
 
+    
     var foods = [Food]()
     var filteredFoods = [Food]()
+    //var forTodaysFood = [Food]()
+    var chosenFood: Food?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +39,7 @@ class FoodsViewController: UIViewController, UISearchBarDelegate, UISearchDispla
         filteredFoods = foods
         
     }
+    
     
     
     @IBAction func onPlusTapped() {
@@ -134,11 +139,22 @@ extension FoodsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+//        let position = indexPath.row
+//        //let item = foods[position]
+//
+//        let labelRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.tableViewLabelClick))
+//                cell.textLabel?.isUserInteractionEnabled = true
+//                cell.textLabel?.addGestureRecognizer(labelRecognizer)
+//
+        
         cell.textLabel?.text = "\(filteredFoods[indexPath.row].name!)   -   \(String(filteredFoods[indexPath.row].coloriesPer100Grams))calories"
-        //cell.detailTextLabel?.text = String(foods[indexPath.row].coloriesPer100Grams)
         cell.detailTextLabel?.text = "C: \(String(filteredFoods[indexPath.row].macroCarb))  P: \(String(filteredFoods[indexPath.row].macroProtein))  F: \(String(filteredFoods[indexPath.row].macroFat))"
-//        cell.detailTextLabel?.text = String(foods[indexPath.row].macroCarb)
-//        cell.detailTextLabel?.text = String(foods[indexPath.row].macroProtein)
+        //cell.target(forAction: Selector(("tableViewLabelClick:")), withSender: self)
         return cell
     }
+    
+    
+    
 }
+
+
